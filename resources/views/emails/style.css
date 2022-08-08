@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f6aa1c;
+}
+
+.hero{
+    padding: 150px;
+}
+
+.birthday-cover{
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    box-sizing: border-box;
+    box-shadow: 23px 17px 35px -11px rgba(59, 13, 13, 0.75);
+    background: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.birthday-cover .div1{
+    background: #fff;
+}
+
+.birthday-cover .div1 h1{
+    color: #fd0000;
+}
+
+.div1{
+    border-left: 7px solid #fd0000;
+    border-right: 7px solid #fd0000;
+}
+
+.div2 p{
+    padding-top: 20px;
+}
+
+.birthday-cover .cakes{
+    width: 300px;
+    height: 190px;
+    padding-left: 50px;
+}
+
+.birthday-cover:hover {
+	transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform-origin: center;
+	-moz-transform-origin: center;
+	-webkit-transform-origin: center;
+	transition: 2s ease all;
+	-moz-transition: 2s ease all;
+	-webkit-transition: 2s ease all;
+}
+
+.animate{
+    animation: animate 4s normal forwards ease-in-out;
+}
+
+.animate img{
+    position: absolute;
+}
+
+#image1{
+    margin-left: 70%;
+}
+
+#image2{
+    margin-left: 40%;
+}
+
+#image3{
+    margin-left: 50%;
+    margin-top: -100px;
+}
+
+@keyframes animate {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1000px);
+    }
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 1170) {
+    
+}
