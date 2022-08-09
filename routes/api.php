@@ -81,6 +81,7 @@ Route::group(['middleware' => 'auth:sanctum',], function (){
 
     Route::get('/add-member', [GroupAdminController::class, 'addMember']);
     Route::get('/admin-groups', [GroupAdminController::class, 'myGroups']);
+    Route::get('/admin-group', [GroupAdminController::class, 'myGroup']);
     Route::get('/birthday', [BirthdayController::class, 'birthday']);
     Route::get('/user-count', [StatisticsController::class, 'membersCount']);
     Route::get('/birthday-count', [BirthdayController::class, 'birthdaycount']);

@@ -15,9 +15,9 @@ class GroupAdminController extends Controller
 
         return response()->json($admins);
     }
-    function getMyGroupName()
+    function myGroup()
     {
-        $admin = auth()->user()->groupAdmins;
+        $admin = auth()->user()->groupAdmins->first();
 
         return response()->json($admin->group->group_name, 200);
     }
