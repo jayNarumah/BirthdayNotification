@@ -39,7 +39,8 @@ class GroupAdminController extends Controller
                             ->where('profile_id', $rules['profile_id'])->first();
 
         if ($member) {
-            return response()->json("Sorry, User already exist in the group", 403);
+            // return response()->json("Sorry, User already exist in the group", 403);
+            return response()->json(["error" => "Sorry, User already exist in the group"], 403);
         }else {
             $member = GroupMember::create($rules);
         }

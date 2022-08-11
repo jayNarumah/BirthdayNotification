@@ -34,18 +34,6 @@ class GroupController extends Controller
             'is_active' => true,
         ]);
 
-        // if($request->admin_id > 0)
-        // {
-        //     $admin = User::findOrFail($request->admin_id);
-        //     $admin = update([
-        //         'group_id' => $group->id,
-        //     ]);
-
-        //     return response()->json([
-        //         'group' => $group,
-        //         'admin' => $admin,
-        //     ], 201);
-        // }
         return new GroupResource($group, 201);
 
     }
